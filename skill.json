@@ -1,0 +1,38 @@
+{
+  "name": "genpark-agent-computer-interface-swe-patch-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Agent-Computer Interface SWE patch synthesizer generating targeted diffs and executing regression test suites.",
+  "author": "genpark",
+  "category": "swe-bench",
+  "tags": [
+    "swe-agent",
+    "agent-computer-interface",
+    "patch-synthesis",
+    "automated-debugging",
+    "code-repair"
+  ],
+  "inputs": {
+    "issue_description": {
+      "type": "string"
+    },
+    "target_repo_path": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "patch_session_id": {
+      "type": "string"
+    },
+    "diff_patch_synthesized_lines": {
+      "type": "integer"
+    },
+    "regression_test_suite_passed": {
+      "type": "boolean"
+    },
+    "patch_diff_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
